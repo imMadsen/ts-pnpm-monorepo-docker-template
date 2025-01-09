@@ -1,0 +1,19 @@
+{
+  "name": "my-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker-build-my-example-package": "docker build -t my-example-package -f packages/my-example-package/Dockerfile ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "latest",
+    "ts-node": "latest",
+    "@types/node": "latest"
+  }
+}
